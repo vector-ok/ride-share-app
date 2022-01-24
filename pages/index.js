@@ -62,6 +62,6 @@ const Profile = tw.div`flex items-center`;
 const Name = tw.div`w-20 text-sm text-white`;
 const UserImage = tw.img`h-10 w-10 rounded-full border border-gray-200 p-px`;
 const ActionButtons = tw.div`flex my-5`;
-const ActionButton = tw.div`flex bg-gray-100 flex-1 m-1 h-32 items-center flex-col justify-center rounded-lg transform hover:scale-90 transition text-lg`;
+const ActionButton = tw.div`flex bg-gray-100 flex-1 m-1 h-32 items-center flex-col justify-center rounded-lg transform hover:scale-90 transition text-lg cursor-pointer`;
 const ActionButtonImage = tw.img`h-3/5`;
 const InputButton = tw.div`h-20 bg-gray-200 text-2xl p-4 flex items-center mt-8`;

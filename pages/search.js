@@ -37,7 +37,7 @@ export default Search;
 
 const Wrapper = tw.div`bg-gray-100`;
 const ButtonContainer = tw.div` px-4`;
-const BackButton = tw.img`bg-green-400 h-20 transform hover:scale-90 transition`;
+const BackButton = tw.img`bg-green-400 h-20 transform hover:scale-90 transition cursor-pointer`;
 const FromToIcons = tw.div``;
 const InputContainer = tw.div`bg-white flex items-center`;
 // const Circle = tw.img`h-5`;
@@ -45,7 +45,7 @@ const Line = tw.img``;
 const Square = tw.img``;
 const InputBoxes = tw.div`flex flex-col flex-1 mx-10`;
 const Input = tw.input`h-10 bg-gray-200 m-2 rounded-2 outline-none border-none`;
-const PlusIcon = tw.img`h-10 mr-10 transform hover:scale-90 transition`;
+const PlusIcon = tw.img`h-10 mr-10 transform hover:scale-90 transition cursor-pointer`;
 const SavedPlaces = tw.div`bg-white flex items-center p-5 my-10`;
 const StarIcon = tw.img`h-5 mr-1`;
 const ConfirmLocations = tw.div`flex flex-col flex-1 items-center bg-gray-500 py-5`;

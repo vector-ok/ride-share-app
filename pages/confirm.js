@@ -1,13 +1,17 @@
+import { useRouter } from 'next/router';
 import React, { useState, useEffect } from 'react';
 import tw from 'tailwind-styled-components';
 import Map from './components/Map';
 
 const Confirm = () => {
+  const router = useRouter();
+  const { pickup, dropoff } = router.query;
+
   const [pickupCoordinates, setPickupCoordinates] = useState();
   const [dropoffCoordinates, setDropoffCoordinates] = useState();
   const mapbox_access_token = process.env.NEXT_PUBLIC_MAPBOX_TOKEN;
-  const getPickupCoordinates = () => {
-    const pickup = 'Ibadan';
+  const getPickupCoordinates = (pickup) => {
+    // const pickup = 'Ibadan';
     fetch(
       `https://api.mapbox.com/geocoding/v5/mapbox.places/${pickup}.json?` +
         new URLSearchParams({
@@ -22,8 +26,8 @@ const Confirm = () => {
     );
   };
 
-  const getDropoffCoordinates = () => {
-    const dropoff = 'Lagos';
+  const getDropoffCoordinates = (dropoff) => {
+    // const dropoff = 'Lagos';
     fetch(
       `https://api.mapbox.com/geocoding/v5/mapbox.places/${dropoff}.json?` +
         new URLSearchParams({
@@ -39,9 +43,9 @@ const Confirm = () => {
   };
 
   useEffect(() => {
-    getPickupCoordinates();
-    getDropoffCoordinates();
-  }, []);
+    getPickupCoordinates(pickup);
+    getDropoffCoordinates(dropoff);
+  }, [pickup, dropoff]);
 
   return (
     <Wrapper>

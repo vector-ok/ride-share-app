@@ -10,11 +10,17 @@ const Search = () => {
   // console.log('dropoff input is ', dropoff);
   return (
     <Wrapper>
-      <ButtonContainer>
+      <ButtonContainer1>
+        <Link href="/">
+          <BackButton2 src="https://img.icons8.com/ios-filled/50/000000/left.png"></BackButton2>
+        </Link>
+      </ButtonContainer1>
+
+      {/* <ButtonContainer>
         <Link href="/">
           <BackButton src="https://cdn.pixabay.com/photo/2021/12/13/23/19/redo-6869302_1280.png" />
         </Link>
-      </ButtonContainer>
+      </ButtonContainer> */}
       <InputContainer>
         <FromToIcons>
           {/* <Circle src="https://cdn.pixabay.com/photo/2013/07/12/18/16/hawser-153165_1280.png" /> */}
@@ -73,3 +79,5 @@ const SavedPlaces = tw.div`bg-white flex items-center p-5 my-10`;
 const StarIcon = tw.img`h-5 mr-1`;
 const ConfirmLocations = tw.div`flex flex-col flex-1 items-center bg-gray-500 py-5`;
 const ConfirmButton = tw.button`bg-gray-800 text-white px-10 py-3 border rounded transform hover:scale-90 transition `;
+const ButtonContainer1 = tw.div`rounded-full bg-white shadow.md cursor-pointer m-5`;
+const BackButton2 = tw.img`h-full object-contain`;

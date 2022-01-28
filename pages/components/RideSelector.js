@@ -18,7 +18,7 @@ function RideSelector({ pickupCoordinates, dropoffCoordinates }) {
 
   return (
     <Wrapper>
-      <Title>Choose your ride, or swipe up for more.</Title>
+      <Title>Choose your ride, or swipe up for more...</Title>
       <CarList>
         {carList.map((car, index) => (
           <Car key={index}>

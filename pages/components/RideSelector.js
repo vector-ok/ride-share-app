@@ -30,14 +30,6 @@ function RideSelector({ pickupCoordinates, dropoffCoordinates }) {
             <Price>{'NGN' + (rideDuration * car.multiplier).toFixed(2)}</Price>
           </Car>
         ))}
-        {/* <Car>
-          <CarImage src="https://cdn.pixabay.com/photo/2012/05/29/00/43/car-49278_1280.jpg" />
-          <CarDetails>
-            <Service>Share Ryde</Service>
-            <Time>10min away</Time>
-          </CarDetails>
-          <Price>NGN 1500</Price>
-        </Car> */}
       </CarList>
     </Wrapper>
   );
